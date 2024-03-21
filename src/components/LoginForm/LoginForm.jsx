@@ -62,7 +62,7 @@ const LoginForm = () => {
                     <FaLock className="icon" />
                 </div>
                 {error && <div className="error">{error}</div>}
-                <button type="submit">Login</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     );

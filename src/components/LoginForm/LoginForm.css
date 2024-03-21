@@ -100,3 +100,46 @@
     font-size: 14px;
     margin-top: 5px;
 }
+
+
+/* Additional CSS for enhanced UI */
+
+/* Add a subtle shadow to the wrapper */
+.wrapper {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Add transition effect for smoother hover */
+.wrapper button {
+    transition: background-color 0.3s ease;
+}
+
+/* Add a subtle glow effect on input focus */
+.input-box input:focus {
+    box-shadow: 0 0 8px rgba(0, 0, 255, 0.3);
+}
+
+/* Add transition for smooth placeholder color change */
+.input-box input::placeholder {
+    transition: color 0.3s ease;
+}
+
+/* Add a hover effect for the forgot password link */
+.wrapper .forgot-password:hover {
+    color: #333; /* Darken the text color on hover */
+}
+
+/* Add a slight scale effect on button hover */
+.wrapper button:hover {
+    transform: scale(1.05);
+}
+
+/* Add a gradient background to the button */
+.wrapper button {
+    background: linear-gradient(to right, #4caf50, #4caf50b3); /* Green gradient */
+}
+
+/* Change cursor to pointer on button hover */
+.wrapper button:hover {
+    cursor: pointer;
+}
