@@ -1,76 +1,61 @@
-.wrapper{
-
+.wrapper {
     width: 520px;
-    background : white;
+    background: white;
     color: black;
-    border-radius:  10px;
-    padding: 30px 40px; 
-    
-
+    border-radius: 10px;
+    padding: 30px 40px;
 }
+
 .wrapper h1 {
     font-size: 36px;
     text-align: center;
-    padding: +30px down;
-
-
+    padding: 30px 0;
 }
 
-.wrapper .input-box{ 
-
-
+.wrapper .input-box {
     position: relative;
-   
-    width: 100%;    
-   
-    /* background: wheat; */
+    width: 100%;
     height: 50px;
-    margin: 40px 0 ;
+    margin: 40px 0;
     font-size: 20px;
     color: black;
     font-family: 'Poppins', sans-serif;
 }
 
-.input-box input{
-
+.input-box input {
     width: 100%;
     height: 100%;
     background: skyblue;
     border: none;
     outline: none;
-    border: 2px solid black (255,255,255, 2) ;
+    border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 40px;
     font-size: 16px;
     padding-left: 20px;
     color: black;
-   
 }
 
 .input-box input::placeholder {
     color: white;
-    
 }
-
 
 .input-box .icon {
-     position: absolute;
-     right: 20px ;
-     top: 50%;
-     transform: translate(-50%);
-     font-size: 16px; 
-     color: black;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translate(-50%);
+    font-size: 16px;
+    color: black;
 }
 
-
-.wrapper .remember-forgot{
+.wrapper .remember-forgot {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: -15px 0 15px ;
+    margin: -15px 0 15px;
 }
 
 .wrapper button {
-
     width: 100%;
     height: 50px;
     border: none;
@@ -81,9 +66,37 @@
     font-family: 'Poppins', sans-serif;
     border-radius: 40px;
     cursor: pointer;
-    margin-top: 20px ;
+    margin-top: 20px;
     box-shadow: 0 0 10px black;
     font-size: 16px;
     font-weight: 700;
+}
 
+/* Additional CSS for beautifying the UI */
+
+.input-box input:focus {
+    border-color: dodgerblue;
+    box-shadow: 0 0 5px dodgerblue;
+}
+
+.wrapper button:hover {
+    background: lightgray;
+}
+
+.wrapper .forgot-password {
+    text-decoration: underline;
+    color: gray;
+    font-size: 14px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 5px;
 }
